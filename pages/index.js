@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Flex, Box, Text, Button } from "@chakra-ui/react";
-
 import { baseUrl , fetchApi } from "../utils/fetchApi";
+import Property from "../components/property";
 
 
 const Banner = ({ purpose , title1 , title2 , desc1 , desc2, buttonText,linkName,imageUrl}) =>(
@@ -22,7 +22,6 @@ const Banner = ({ purpose , title1 , title2 , desc1 , desc2, buttonText,linkName
 
 
 export default function Home({propertiesForSale,propertiesForRent}) {
-    console.log(propertiesForRent,propertiesForSale);
   
   return (
     <Box>
